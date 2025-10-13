@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 const navItems = [
-  { label: "Hero", id: "hero" },
+  { label: "Home", id: "hero" },
   { label: "Esprit", id: "esprit" },
   { label: "Taff", id: "oeuvre" },
   { label: "Lab", id: "laboratoire" },
   { label: "Humain", id: "humain" },
-  { label: "Connexion", id: "connexion" },
+  { label: "Connec", id: "connexion" },
 ];
 
 export const Navigation = () => {
@@ -42,7 +42,7 @@ export const Navigation = () => {
   };
 
   return (
-    <nav className="fixed top-8 left-1/2 bg-[#180b3d] -translate-x-1/2 z-50 glass-strong px-6 py-3 rounded-full animate-fade-in">
+    <nav className="fixed top-8 left-1/2 bg-[#180b3d74] -translate-x-1/2 z-50 glass-strong px-6 py-3 rounded-full animate-fade-in">
       <ul className="flex gap-6">
         {navItems.map((item) => (
           <li key={item.id}>

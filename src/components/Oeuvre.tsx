@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "../components/ui/button";
+import projetagri from "../assets/projetagri.png";
+import projetarchi from "../assets/projetarchi.png";
 
 type Tech = "HTML" | "CSS" | "JavaScript" | "React" | "TypeScript" | "Node.js" | "PHP" | "Tailwind" | "Laravel" ;
 
@@ -20,14 +22,14 @@ const projects: Project[] = [
     title: "Agritrack",
     description: "Plateforme de suivie des production agricoles",
     tech: ["HTML", "PHP", "CSS", "JavaScript"],
-    image: "src/assets/projetagri.png",
+    image: projetagri,
   },
   {
     id: 2,
     title: "Arcivia",
     description: "plateforme d'upload et de gestion de fichier ",
     tech: ["Node.js", "PHP", "JavaScript"],
-    image: "src/assets/projetarchi.png",
+    image: projetarchi,
   },
   {
     id: 3,

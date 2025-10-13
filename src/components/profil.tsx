@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import {  User } from "lucide-react";
 import { createIcons, icons } from 'lucide';
+import me from "../assets/me.png";
+import CV from "../assets/CV Professionnel kamga wabo.pdf";
 
 createIcons({ icons });
 
@@ -8,7 +10,11 @@ export const Profil = () => {
   return (
     <section
       id="profil"
-      className="relative py-20 bg-[url('src/assets/me.png')] bg-cover bg-no-repeat via-muted/10 to-background"
+      className="relative py-20 bg-cover bg-no-repeat via-muted/10 to-background"
+        style={{
+    backgroundImage: `url(${me})`,
+    backgroundSize: "cover",
+  }}
     >
       <div className="max-w-5xl mx-auto px-6 text-center">
         {/* Icône / Titre */}
@@ -65,10 +71,17 @@ export const Profil = () => {
           </div>
         </motion.div>
         <div className="flex items-center justify-center gap-6 mt-10 cursor-pointer hover:scale-105 transition-transform duration-300">
-            <div className="h-8 w-8 rounded-full bg-blue-500 border">
-                <i data-lucide="file-down"></i>
-            </div>
-            <div>Mon cv</div>
+          <a
+  href={CV}
+  download
+  className="flex items-center gap-3 bg-card border border-border px-5 py-3 rounded-lg shadow-sm hover:shadow-lg transition-shadow duration-300 text-primary font-medium"
+>
+  <div className="h-8 w-8 rounded-full bg-blue-500 border flex items-center justify-center">
+    <i data-lucide="file-down"></i>
+  </div>
+  <div>Mon CV</div>
+</a>
+
         </div>
       </div>
     </section>

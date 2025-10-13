@@ -1,4 +1,13 @@
 import { useState, useEffect, useRef } from "react";
+import htmllogo from "../assets/html.png";
+import csslogo from "../assets/css.png";
+import jslogo from "../assets/js.png";
+import reactlogo from "../assets/react.png";
+import nodelogo from "../assets/node.png";
+import phplogo from "../assets/php.png";
+import tslogo from "../assets/ts.jpg";
+import tailwindlogo from "../assets/tailwind.png";
+import laravellogo from "../assets/laravel.png";
 
 type Skill = {
   id: number;
@@ -8,15 +17,15 @@ type Skill = {
 };
 
 const skills: Skill[] = [
-  { id: 1, image: "../src/assets/html.png", title: "HTML5", description: "Structure et sémantique des pages web" },
-  { id: 2, image: "../src/assets/css.png", title: "CSS3", description: "Mise en forme et design responsif" },
-  { id: 3, image: "../src/assets/js.png", title: "JavaScript", description: "Interactivité et logique côté client" },
-  { id: 4, image: "../src/assets/react.png", title: "React", description: "Bibliothèque pour construire des interfaces utilisateur" },
-  { id: 5, image: "../src/assets/node.png", title: "Node.js", description: "Exécution de JavaScript côté serveur" },
-  { id: 6, image: "../src/assets/php.png", title: "PHP", description: "Langage de script côté serveur" },
-  { id: 7, image: "../src/assets/ts.jpg", title: "TypeScript", description: "Superset de JavaScript avec typage statique" },
-  { id: 8, image: "../src/assets/tailwind.png", title: "Tailwind CSS", description: "Framework CSS utilitaire pour un design rapide" },
-  { id: 9, image: "../src/assets/laravel.png", title: "Laravel", description: "Framework PHP pour applications web élégantes" },
+  { id: 1, image: htmllogo, title: "HTML5", description: "Structure et sémantique des pages web" },
+  { id: 2, image: csslogo, title: "CSS3", description: "Mise en forme et design responsif" },
+  { id: 3, image: jslogo, title: "JavaScript", description: "Interactivité et logique côté client" },
+  { id: 4, image: reactlogo, title: "React", description: "Bibliothèque pour construire des interfaces utilisateur" },
+  { id: 5, image: nodelogo, title: "Node.js", description: "Exécution de JavaScript côté serveur" },
+  { id: 6, image: phplogo, title: "PHP", description: "Langage de script côté serveur" },
+  { id: 7, image: tslogo, title: "TypeScript", description: "Superset de JavaScript avec typage statique" },
+  { id: 8, image: tailwindlogo, title: "Tailwind CSS", description: "Framework CSS utilitaire pour un design rapide" },
+  { id: 9, image: laravellogo, title: "Laravel", description: "Framework PHP pour applications web élégantes" },
 ];
 
 type Bubble = {
