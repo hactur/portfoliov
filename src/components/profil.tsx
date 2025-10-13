@@ -14,6 +14,7 @@ export const Profil = () => {
         style={{
     backgroundImage: `url(${me})`,
     backgroundSize: "cover",
+    backgroundPosition: "center",
   }}
     >
       <div className="max-w-5xl mx-auto px-6 text-center">
