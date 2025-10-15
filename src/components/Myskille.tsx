@@ -90,8 +90,9 @@ export const Myskill = () => {
           <span className="text-muted-foreground">Chapitre III —</span>
           <br />
           <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Mon Skillset
+             Mes Compétences
           </span>
+           
         </h2>
         <p className="text-lg text-gray-400">Compétences & Technologies</p>
       </div>

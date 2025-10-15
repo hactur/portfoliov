@@ -1,12 +1,13 @@
+import { Brain, FlaskConical, Home, Icon, LogIn, MonitorCog, PersonStanding } from "lucide-react";
 import { useState, useEffect } from "react";
 
 const navItems = [
-  { label: "Home", id: "hero" },
-  { label: "Esprit", id: "esprit" },
-  { label: "Taff", id: "oeuvre" },
-  { label: "Lab", id: "laboratoire" },
-  { label: "Humain", id: "humain" },
-  { label: "Connec", id: "connexion" },
+  { Icon:Home, label: "Home", id: "hero" },
+  { Icon:Brain, label: "Esprit", id: "esprit" },
+  { Icon:MonitorCog, label: "Taff", id: "oeuvre" },
+  { Icon:FlaskConical, label: "Lab", id: "laboratoire" },
+  { Icon:PersonStanding, label: "Humain", id: "humain" },
+  { Icon:LogIn, label: "Connec", id: "connexion" },
 ];
 
 export const Navigation = () => {
@@ -54,7 +55,7 @@ export const Navigation = () => {
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
-              {item.label}
+              {item.Icon && <item.Icon className="inline-block w-5 h-5 mr-1" />}
             </button>
           </li>
         ))}

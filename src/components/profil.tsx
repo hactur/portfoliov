@@ -29,7 +29,10 @@ export const Profil = () => {
             <User className="h-8 w-8 text-primary" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            <span className="gradient-text">KAMGA WABO PASCAL ARTHUR</span>
+            <br />
             Mon <span className="text-primary">Profil</span>
+
           </h2>
           <p className="text-muted-foreground max-w-2xl mt-3">
             Une vision claire, une curiosité sans limites et une approche
@@ -80,8 +83,8 @@ export const Profil = () => {
   <div className="h-8 w-8 rounded-full bg-blue-500 border flex items-center justify-center">
     <i data-lucide="file-down"></i>
   </div>
-  <div>Mon CV</div>
 </a>
+  <div>Télécharger Mon CV</div>
 
         </div>
       </div>
